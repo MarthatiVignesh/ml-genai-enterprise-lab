@@ -1,0 +1,61 @@
+{
+  "project": "P1 - Industrial IoT Failure Prediction",
+  "data_source": "Synthetic demonstration dataset",
+  "dataset_rows": 5000,
+  "train_rows": 4000,
+  "test_rows": 1000,
+  "sensor_features": [
+    "vibration",
+    "spindle_temperature",
+    "motor_voltage",
+    "acoustic_noise"
+  ],
+  "rul_regression": {
+    "MAE_hours": 22.812248775880544,
+    "RMSE_hours": 28.619136379518746
+  },
+  "failure_classification": {
+    "ROC_AUC": 0.5968761904761904,
+    "default_threshold": {
+      "Threshold": "Default",
+      "Value": 0.5,
+      "Accuracy": 0.557,
+      "Precision": 0.22083333333333333,
+      "Recall": 0.6057142857142858,
+      "F1": 0.3236641221374046
+    },
+    "recall_tuned_threshold": {
+      "Threshold": "Recall-tuned",
+      "Value": 0.4077,
+      "Accuracy": 0.316,
+      "Precision": 0.18618988902589395,
+      "Recall": 0.8628571428571429,
+      "F1": 0.30628803245436104
+    },
+    "default_confusion_matrix": [
+      [
+        451,
+        374
+      ],
+      [
+        69,
+        106
+      ]
+    ],
+    "tuned_confusion_matrix": [
+      [
+        165,
+        660
+      ],
+      [
+        24,
+        151
+      ]
+    ]
+  },
+  "limitations": [
+    "Synthetic data; not real industrial telemetry.",
+    "Failure classifier has limited discrimination.",
+    "Random train/test split; chronological or machine-held-out validation is recommended."
+  ]
+}
