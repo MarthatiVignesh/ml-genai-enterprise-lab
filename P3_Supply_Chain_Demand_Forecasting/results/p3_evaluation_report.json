@@ -1,0 +1,27 @@
+{
+  "dataset_type": "synthetic",
+  "rows_after_lag_features": 4296,
+  "training_rows": 3432,
+  "testing_rows": 864,
+  "best_mlp_configuration": {
+    "hidden_dim": 96,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001
+  },
+  "best_validation_mse_normalized": 0.05348990485072136,
+  "test_metrics": [
+    {
+      "Model": "Random Forest with lag features",
+      "MAE": 7.940225847853042,
+      "RMSE": 9.92677532128627,
+      "R2": 0.9019091875257778
+    },
+    {
+      "Model": "Tuned PyTorch MLP",
+      "MAE": 12.39905540589933,
+      "RMSE": 15.609195028620277,
+      "R2": 0.7574658148773381
+    }
+  ]
+}
