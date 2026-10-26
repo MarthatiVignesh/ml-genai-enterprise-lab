@@ -1,0 +1,25 @@
+{
+  "project": "P2 - Fintech Transaction Fraud Scoring",
+  "dataset_type": "Synthetic demonstration data",
+  "transactions": 10000,
+  "fraud_transactions": 1627,
+  "legitimate_transactions": 8373,
+  "customer_profiles": 1989,
+  "selected_k": 2,
+  "classification_metrics": {
+    "Decision Tree": {
+      "Accuracy": 0.65,
+      "Precision": 0.21973094170403587,
+      "Recall": 0.4523076923076923,
+      "F1 Score": 0.29577464788732394,
+      "ROC-AUC": 0.5751458094144661
+    },
+    "Random Forest": {
+      "Accuracy": 0.7485,
+      "Precision": 0.24858757062146894,
+      "Recall": 0.27076923076923076,
+      "F1 Score": 0.25920471281296026,
+      "ROC-AUC": 0.6160569460390356
+    }
+  }
+}
